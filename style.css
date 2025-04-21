@@ -1,0 +1,250 @@
+* {
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: default;
+}
+
+html {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  max-width: 90vw;
+  height: 90vw;
+  max-height: 90vh;
+  aspect-ratio: 9 / 16;
+  overflow: hidden;
+  font: normal 16px/1.5 sans-serif;
+  transition: all 0.2s ease-in-out;
+}
+
+.item {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.item .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+}
+
+h3 {
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  opacity: 0;
+  transition: all 0.6s ease-in-out;
+}
+
+.item {
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+}
+
+body:not(.interfase):not(.profase):not(.metafase):not(.anafase):not(.telofase):not(.citocinesis) .item:hover {
+  transform: scale(1.1);
+}
+
+body.interfase .description,
+body.profase .description,
+body.metafase .description,
+body.anafase .description,
+body.telofase .description,
+body.citocinesis .description {
+  opacity: 1;
+}
+
+.item.interfase {
+  top: 2%;
+  left: 36%;
+}
+
+.item.interfase .description {
+  position: absolute;
+  top: -85px;
+  left: 110px;
+  width: 300px;
+  margin: 0;
+}
+
+body.interfase {
+  transform: translateX(-66%) translateY(34%);
+}
+
+body.interfase .item.interfase {
+  transform: scale(1.5);
+  overflow: visible;
+  z-index: 1;
+}
+
+body.interfase .item:not(.interfase) {
+  opacity: 0.1;
+  filter: blur(4px);
+}
+
+.item.profase {
+  top: 15%;
+  left: 4%;
+}
+
+.item.profase .description {
+  position: absolute;
+  top: -55px;
+  left: 110px;
+  width: 300px;
+  margin: 0;
+}
+
+body.profase {
+  transform: translateX(-35%) translateY(22%);
+}
+
+body.profase .item.profase {
+  transform: scale(1.5);
+  overflow: visible;
+  z-index: 1;
+}
+
+body.profase .item:not(.profase) {
+  opacity: 0.1;
+  filter: blur(4px);
+}
+
+.item.metafase {
+  top: 15%;
+  left: 67%;
+}
+
+.item.metafase .description {
+  position: absolute;
+  top: -35px;
+  left: 110px;
+  width: 300px;
+  margin: 0;
+}
+
+body.metafase {
+  transform: translateX(-100%) translateY(22%);
+}
+
+body.metafase .item.metafase {
+  transform: scale(1.5);
+  overflow: visible;
+  z-index: 1;
+}
+
+body.metafase .item:not(.metafase) {
+  opacity: 0.1;
+  filter: blur(4px);
+}
+
+.item.anafase {
+  top: 30%;
+  left: 36%;
+}
+
+.item.anafase .description {
+  position: absolute;
+  top: -20px;
+  left: 110px;
+  width: 300px;
+  margin: 0;
+}
+
+body.anafase {
+  transform: translateX(-70%) translateY(8%);
+}
+
+body.anafase .item.anafase {
+  transform: scale(1.5);
+  overflow: visible;
+  z-index: 1;
+}
+
+body.anafase .item:not(.anafase) {
+  opacity: 0.1;
+  filter: blur(4px);
+}
+
+.item.telofase {
+  top: 54%;
+  left: 36%;
+}
+
+.item.telofase .description {
+  position: absolute;
+  top: -10px;
+  left: 110px;
+  width: 300px;
+  margin: 0;
+}
+
+body.telofase {
+  transform: translateX(-70%) translateY(-15%);
+}
+
+body.telofase .item.telofase {
+  transform: scale(1.5);
+  overflow: visible;
+  z-index: 1;
+}
+
+body.telofase .item:not(.telofase) {
+  opacity: 0.1;
+  filter: blur(4px);
+}
+
+.item.citocinesis {
+  top: 78%;
+  left: 36%;
+}
+
+.item.citocinesis .description {
+  position: absolute;
+  top: -25px;
+  left: 110px;
+  width: 300px;
+  margin: 0;
+}
+
+body.citocinesis {
+  transform: translateX(-70%) translateY(-37%);
+}
+
+body.citocinesis .item.citocinesis {
+  transform: scale(1.5);
+  overflow: visible;
+  z-index: 1;
+}
+
+body.citocinesis .item:not(.citocinesis) {
+  opacity: 0.1;
+  filter: blur(4px);
+}

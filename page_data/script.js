@@ -8,7 +8,7 @@ const telofase = document.querySelector(".telofase");
 const citocinesis = document.querySelector(".citocinesis");
 
 document.getElementById("goToInteractive")?.addEventListener("click", () => {
-  window.location.href = "interactive.html";
+  window.location.href = "page_data/interactive.html";
 });
 
 document.addEventListener("click", (e) => {

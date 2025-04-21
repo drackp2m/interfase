@@ -13,7 +13,28 @@ html {
   height: 100vh;
   margin: 0;
   padding: 0;
+  background-color: #eeeeee;
+}
+
+html[data-attr="interactive"] {
   background-color: #f1ddd9;
+}
+
+html[data-attr="static"] .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+html[data-attr="static"] .content button {
+  background-color: #efc0c7;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 body {

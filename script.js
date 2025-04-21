@@ -7,6 +7,10 @@ const anafase = document.querySelector(".anafase");
 const telofase = document.querySelector(".telofase");
 const citocinesis = document.querySelector(".citocinesis");
 
+document.getElementById("goToInteractive")?.addEventListener("click", () => {
+  window.location.href = "interactive.html";
+});
+
 document.addEventListener("click", (e) => {
   if (e.target.tagName === "HTML") {
     body.className = "";
